@@ -2,12 +2,19 @@
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
-    -text-black-900:#302e4d;
-    -text-black-700:#504e70;
+    --text-black-900:#302e4d;
+    --text-black-700:#5e5b88;
 }
 body{
     margin: 0;
     padding: 0;
+}
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
 }
 *{
     margin: 0;
@@ -37,15 +44,14 @@ body{
 .aside .logo{
     position: absolute;
     top: 50px;
-    margin-left: -55px;
+    margin-left: -10px;
     font-size: 30px;
     text-transform: capitalize;
 }
 .aside .logo a{
-    color: var(--bg-black-900);
+    color: var(--text-black-900);
     font-weight: 700;
     background: var(--bg-black-100);
-    color: rgb(63, 63, 63);
     padding: 15px 20px;
     font-size: 30px;
     letter-spacing: 1.5px;
@@ -205,7 +211,7 @@ ul{
     height: 80px;
     width: 80px;
     bottom: -30px;
-    right: 10px;
+    right: 50px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
 }
@@ -215,7 +221,7 @@ ul{
     height: 80px;
     width: 80px;
     top: -30px;
-    left: 10px;
+    left: 50px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
 }
